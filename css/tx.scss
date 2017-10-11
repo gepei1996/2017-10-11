@@ -1,0 +1,22 @@
+.m1{
+    width: 100%; 
+    display: flex;
+    flex-wrap:nowrap ;
+    flex-direction:row;
+    div{
+        background-color: red;
+        margin:10px;
+       
+        &:nth-child(1){
+            width: 200px;           
+        }
+        &:nth-child(2){
+            flex: 1;
+            flex-basis: 50%;
+        }
+        &:nth-child(3){
+            flex: 1;
+             flex-basis: 50%;
+        }
+    }
+}

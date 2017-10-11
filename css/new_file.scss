@@ -1,0 +1,32 @@
+$bl:25;
+html{
+    width: 100%;
+    height: 100%;
+    body{
+         @extend html;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+       
+        header{
+            width: 100%;
+            height:50/$bl+rem;
+            background-color: red;
+            top: 0;
+        }
+        section{
+           @extend html;
+           overflow: auto;
+           width: 100%;
+        
+              flex: 1;
+        }
+        footer{
+            width: 100%;
+            height: 50/$bl+rem;
+            background-color: fuchsia;
+            bottom: 0;
+        }
+    }
+}
